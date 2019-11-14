@@ -22,6 +22,16 @@ class DisplayBox extends React.Component {
     } 
   }
 
+  // handleEdit = (e) => {
+
+  // }
+  
+  handleDelete = () => {
+    const copyPeople = this.state.people.slice()
+      copyPeople.splice(this.state.i, 1)
+      this.setState({people: copyPeople})
+  }
+
   render() {
     return(
       <div className="display-box">
@@ -29,7 +39,7 @@ class DisplayBox extends React.Component {
           <Counter i={this.state.i} denom={this.state.people.length}/>
         </div>
         <Person key={this.state.i} person={this.state.people[this.state.i]}/> 
-        <NavPeople handleChange={this.handleChange}/>
+        <NavPeople handleChange={this.handleChange} handleDelete={this.handleDelete}/>
       </div>
     )
   }
