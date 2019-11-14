@@ -9,13 +9,13 @@ class NavPeople extends React.Component {
   render() {
     return(
       <div className="nav-people">
-        <button name="previous" onClick={(e) => this.props.handleChange(e.target.name)}>{`< Previous`}</button>
+        <span id="previous" className="bolder" onClick={(e) => this.props.handleChange(e.target.id)}>{`< Previous`}</span>
         <div className="button-group">
-          <button>Edit</button>
-          <button>Delete</button>
-          <button>New</button>
+          <button className="blue-btn">Edit</button>
+          <button className="blue-btn">Delete</button>
+          <button className="blue-btn">New</button>
         </div>
-        <button name="next" onClick={(e) => this.props.handleChange(e.target.name)}>{`Next >`}</button>
+        <span id="next" className="bolder" onClick={(e) => this.props.handleChange(e.target.id)}>{`Next >`}</span>
       </div>
     )
   }

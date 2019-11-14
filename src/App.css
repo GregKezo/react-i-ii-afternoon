@@ -45,7 +45,7 @@
   background-color: #222222;
   display: flex;
   align-items: center;
-  height: 10vh;
+  height: 8vh;
   justify-content: space-between;
   color: white;
 
@@ -61,11 +61,73 @@
 }
 
 .person-info {
-  height: 40vh;
+  height: 45vh;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   flex-direction: column;
   align-items: flex-start;
   padding-left: 50px;
+  margin-top: -80px;
 
+}
+
+#person-name {
+  font-size: 24px;
+  font-weight: bolder;
+  border-bottom: 2px solid #80c0e0;
+  padding-bottom: 5px;
+}
+
+.logistic-info {
+  height: 90px; 
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  
+}
+
+.bolder {
+  font-weight: bolder;
+}
+
+.dem-movies {
+  height: 90px; 
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-evenly;
+}
+
+.movie-list{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 50px;
+  line-height: 1.5;
+}
+
+#previous{
+  cursor: pointer;
+}
+
+#next{
+  cursor: pointer;
+}
+
+.button-group{
+  display: flex;
+  justify-content: space-evenly;
+  width: 250px;
+}
+
+.blue-btn{
+  background-color: #34a5da;
+  border: 0px;
+  color: white;
+  font-size: 16px;
+  font-weight: bolder;
+  padding: 5px 10px;
+  border-radius: 10px;
+  margin-bottom: 10px;
 }

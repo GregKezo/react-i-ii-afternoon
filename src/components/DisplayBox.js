@@ -5,8 +5,8 @@ import Person from './Person'
 import NavPeople from './NavPeople'
 
 class DisplayBox extends React.Component {
-  constructor(){
-    super()
+  constructor(props){
+    super(props)
     this.state = {
       people: data,
       i: 0

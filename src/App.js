@@ -1,8 +1,8 @@
 import React from 'react';
 import './reset.css'
 import './App.css';
-import DisplayBox from './components/DisplayBox'
-import Header from './components/Header'
+import DisplayBox from './components/DisplayBox';
+import Header from './components/Header';
 
 
 function App() {
